@@ -1,0 +1,249 @@
+html {
+    min-height: 100%;
+    position: relative;
+    font-size: 1rem;
+}
+
+body{
+    margin-bottom: 65px;
+    background-image: url('../images/cookies.jpg');
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 65px;
+  background-color: #212529;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+/* main{
+    flex:1;
+    height:100%;
+}*/
+
+.alert-danger{
+    color : red;
+    text-align:center;
+}
+
+/*
+.titrePageCentre{
+    text-align:center;
+    margin-bottom:1em;
+}*/
+
+
+#menu{
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    align-content:center;
+}
+
+#menu li{
+    display:inline-block;
+    margin-right:1em;
+}
+#menu a{
+    color:white;
+    text-decoration:none;
+    font-size:15pt;
+}
+
+#menu a:hover{
+    color:dodgerblue;
+    transition:0.6s;
+}
+
+.recette{
+    display:flex;
+    flex-direction: column;
+}
+
+.btn-recette {
+  width: 100%;
+  font-size: 140%;
+}
+
+.sectionRecette{
+    text-align:center;
+}
+
+.photoRecette {
+    width:450px;
+    height:300px;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img  {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.2);
+}
+
+.createurRecette{
+    border:1px solid black;
+}
+
+.step, .ingredient {
+  margin-bottom: 15px;
+}
+
+/*form{
+    text-align: center;
+
+}*/
+
+/*form div{
+    margin : 1em;
+}*/
+
+/*form input{
+    margin:1em;
+}*/
+
+.input-commentaire{
+    padding-left:10px;
+    width:500px;
+    height:50px;
+}
+
+.espace-commentaire{
+    margin:2em;
+}
+.espace-commentaire, .ajoutCommentaire, .recherche{
+    text-align: left;
+}
+
+.espace-commentaire h1{
+    font-size:20pt;
+}
+
+.comment-title {
+  background: rgba(0,0,0,0.6);
+  color:white;
+}
+
+.commentaire{
+    display:flex;
+    border-bottom:2px solid black;
+    background: rgba(0,0,0,0.6);
+    color:white;
+    margin:1em;
+    padding:0.5em;
+}
+
+
+.contenu-commentaire {
+    margin:1em;
+}
+
+.comment-message {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.infosRecette{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.infosRecette div{
+    margin:5em;
+}
+
+.ingr, .prep{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.listeEtapesIngredients{
+    margin: 0em 5em 5em 5em;
+    padding:1em;
+    display:flex;
+    flex-direction : row;
+    align-items: center;
+    justify-content: space-around ;
+    background:rgba(255,255,255,0.6);
+    color:black;
+ }
+
+.listeEtapes, .listeIngredients{
+    margin-top:2em;
+    font-size:15pt;
+}
+.listeEtapes li, .listeIngredients li{
+     list-style-type: none;
+ }
+
+.connexion div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantiteIngredient{
+    width:100px;
+}
+.deuxEntrees{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.entreeNombre{
+    width:100px;
+}
+
+.titreRecette{
+    font-size:25pt;
+}
+
+.pageScindee2{
+    margin:5em 15em 5em 15em;
+    display:flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+.pageScindee2 section{
+
+    text-align: center;
+}
+
+
+/* Responsive typography */
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
